@@ -162,6 +162,14 @@ $('.sidebar-toggle').click(function(){
 
         $('.blur-bg').hide();
 
+        $('.mini-header').animate({
+            left: '4rem',
+            width: '16rem',
+        }, 300);
+
+        setTimeout(function(){
+            $('.last-letter').show();
+        }, 300);
     }else{
         // buka sidebar
         $('.sidebar').addClass('active-sidebar');
@@ -174,5 +182,12 @@ $('.sidebar-toggle').click(function(){
         }, 300);
 
         $('.blur-bg').show();
+
+         $('.mini-header').animate({
+            left: '24rem',
+            width: '6rem',
+        }, 300);
+
+        $('.last-letter').hide();
     }
 });
