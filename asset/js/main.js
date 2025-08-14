@@ -160,6 +160,8 @@ $('.sidebar-toggle').click(function(){
             left: '0rem',
         }, 300);
 
+        $('.blur-bg').hide();
+
     }else{
         // buka sidebar
         $('.sidebar').addClass('active-sidebar');
@@ -170,5 +172,7 @@ $('.sidebar-toggle').click(function(){
         $('.sidebar-toggle').animate({
             left: '20rem',
         }, 300);
+
+        $('.blur-bg').show();
     }
 });

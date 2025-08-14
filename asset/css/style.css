@@ -443,6 +443,7 @@ h1{
     border-right-width: thin;
     border-right-color: black;
     background: rgba(120, 120, 120, 0.3);
+    z-index: 9999 !important;
 }
 
 .sidebar-toggle img{
@@ -467,6 +468,16 @@ h1{
     display: block;
     padding: 0.5rem;
     color: #201d00;
+}
+
+.blur-bg{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* jika ingin efeknya hanya sedikit menutupi elemen di belakang*/
+    background-color: rgba(80, 80, 80, 0.4);
 }
 
 /* untuk tablet dan fordable phone*/
@@ -606,13 +617,14 @@ h1{
         top: 0 !important;
 }
 
-    .menu-toggle {
+    .menu-toggle{
         display: block;
         position: absolute;
         top: 1rem;
         left: 1rem;
         width: 3rem;
         height: 3rem;
+        
     }
 
     .menu-toggle img {
